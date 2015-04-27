@@ -3,10 +3,10 @@
  */
 module.exports = {
 
-  srcJs: ['component/**/*.module.js', 'component/**/*.js', '!component/**/*_test.js'],
-  tests: 'component/**/*_test.js',
+  srcJs: ['components/**/*.module.js', 'components/**/*.js', '!components/**/*_test.js'],
+  tests: 'components/**/*_test.js',
   buildFolder: 'dist',
-  buildJsFilename: 'component.js',
+  buildJsFilename: 'chat.js',
   banner: '/*!\n' +
     ' * See LICENSE in this repository for license information\n' +
     ' */\n',

@@ -20,6 +20,7 @@
         "multistr": true,
         "node": true,
         "globals": {
+        "Firebase": false,
         "angular": false,
                 "describe": false,
                 "it": false,
