@@ -6,7 +6,7 @@
 
 angular
   .module('myComponent.version', [])
-  .value('version', '0.4');
+  .value('version', '0.5');
 
 'use strict';
 
@@ -86,7 +86,7 @@ angular.module('directive.chat', ['firebase', 'ngStorage'])
             return {
                 restrict: 'E',
                 priority: -100,
-                templateUrl: 'components/chat/message-list.html',
+                templateUrl: 'bower_components/chat-component/dist/chat/message-list.html',
                 scope: {
                     msg: '=messages'
                 }
@@ -96,7 +96,7 @@ angular.module('directive.chat', ['firebase', 'ngStorage'])
             return {
                 restrict: 'E',
                 priority: -100,
-                templateUrl: 'components/chat/people-list.html',
+                templateUrl: 'bower_components/chat-component/dist/chat/people-list.html',
             };
         });
 })();
