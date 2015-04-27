@@ -9,8 +9,7 @@
     "**/*.txt",
     "component/*",    
     "nbproject/*",    
-    "public_html/*",
-    "*"
+    "public_html/*"
   ],
   "license": "MIT",
   "devDependencies": {
