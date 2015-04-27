@@ -107,31 +107,8 @@
     <div ng-repeat="m in msg" style="background: white;">
         <div ng-class-odd="'chatrowl'" ng-class-even="'chatrow'">
             <div ng-class-odd="'usericonl'" ng-class-even="'usericon-r'"><img ng-src="{{m.usericon}}" /></div> 
-            <!--user user="{{m.usericon}}"></user-->
             <div ng-class-odd="'bubblel'" ng-class-even="'bubbler'"><div class="bubble" ng-class-even="'bubble--alt'">{{m.message}}</div></div> 
         </div>
     </div>
     
 </div>
-
-<!--ion-content class="content-stable"
-                                     on-swipe-left="hideTime = false"
-                                     on-swipe-right="hideTime = true">
-
-                            <div ng-repeat="m in app.room.messages"
-                                 ng-class="{
-                                             other: m.userId != myId
-                                         }"
-                                 class="messages">
-
-                                <div class="m" ng-class="{
-                                        'slide-right'
-                                        : hideTime, '': !hideTime}">
-                                    <span class=".chat">{{ m.message}}</span>
-                                </div>
-
-                                <div class="time" ng-class="{
-                                        'slide-right'
-                                        : hideTime, '': !hideTime}">{{message.time}}</div>
-                            </div>
-                        </ion-content-->

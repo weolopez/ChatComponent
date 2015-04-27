@@ -72,7 +72,7 @@ gulp.task('watch', function () {
 
 gulp.task('ci', function () {
   ciMode = true;
-  return gulp.start(['clean', 'scripts', 'html', 'test']);
+  return gulp.start(['clean', 'html', 'scripts', 'test']);
 });
 
-gulp.task('default', ['scripts', 'html']);
+gulp.task('default', ['html', 'scripts']);

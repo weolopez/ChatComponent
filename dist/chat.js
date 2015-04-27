@@ -6,7 +6,7 @@
 
 angular
   .module('myComponent.version', [])
-  .value('version', '0.5');
+  .value('version', '1.2.6');
 
 'use strict';
 
