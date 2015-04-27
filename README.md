@@ -1,7 +1,10 @@
 # angular-component-seed — the seed for reusable AngularJS components
 
-[![Build Status](https://travis-ci.org/weolopez/ChatComponent.svg?branch=master)](https://travis-ci.org/weolopez/ChatComponent.svg?branch=master)
+[![Build Status](https://travis-ci.org/weolopez/ChatComponent.svg)](https://travis-ci.org/weolopez/ChatComponent.svg)
 
+<a href="#" id="status-image-popup" name="status-images" class="open-popup" data-ember-action="828">
+              <img src="https://travis-ci.org/weolopez/ChatComponent.svg" data-bindattr-829="829" title="Build Status Images">
+            </a>
 This seed project aims to make it easy to create bower components for reusable AngularJS directives, controllers
 & services which follow best practices.
 
