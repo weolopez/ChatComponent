@@ -104,7 +104,7 @@
         .bubbler {display:inline-block; width:200px;float: right} 
 
     </style>
-    <div ng-repeat="m in msg" style="background: white;">
+    <div ng-repeat="m in messages" style="background: white;">
         <div ng-class-odd="'chatrowl'" ng-class-even="'chatrow'">
             <div ng-class-odd="'usericonl'" ng-class-even="'usericon-r'"><img ng-src="{{m.usericon}}" /></div> 
             <div ng-class-odd="'bubblel'" ng-class-even="'bubbler'"><div class="bubble" ng-class-even="'bubble--alt'">{{m.message}}</div></div> 

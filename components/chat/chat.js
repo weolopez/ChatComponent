@@ -68,14 +68,17 @@ angular.module('directive.chat', ['firebase', 'ngStorage'])
                 priority: -100,
                 templateUrl: 'bower_components/chat-component/dist/chat/message-list.html',
                 scope: {
-                    msg: '=messages'
+                    messages: '=messages'
                 }
             };
         })
-        .directive('people-list', function () {
+        .directive('peoplelist', function () {
             return {
                 restrict: 'E',
                 priority: -100,
-                templateUrl: 'bower_components/chat-component/dist/chat/people-list.html',
+                scope: {
+                    users: '=users'
+                },
+                templateUrl: 'bower_components/chat-component/dist/chat/people-list.html'
             };
         });
