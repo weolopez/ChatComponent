@@ -7,7 +7,7 @@ var path = require('path'),
   karmaConfig = require('./karma.conf'),
   config = require('./build.conf.js'),
   plugins = require('gulp-load-plugins')();
-
+  
 var ciMode = false;
 
 gulp.task('clean', function () {
@@ -42,6 +42,11 @@ gulp.task('scripts', function () {
 
 });
 
+gulp.task('html', function () {
+    return gulp.src(config.srcHtmls)
+        .pipe(gulp.dest(config.buildFolder));
+});
+
 gulp.task('test', function () {
 
   karmaConfig({
@@ -67,7 +72,7 @@ gulp.task('watch', function () {
 
 gulp.task('ci', function () {
   ciMode = true;
-  return gulp.start(['clean', 'scripts', 'test']);
+  return gulp.start(['clean', 'scripts', 'html', 'test']);
 });
 
-gulp.task('default', ['scripts']);
+gulp.task('default', ['scripts', 'html']);

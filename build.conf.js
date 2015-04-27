@@ -4,6 +4,7 @@
 module.exports = {
 
   srcJs: ['components/**/*.module.js', 'components/**/*.js', '!components/**/*_test.js'],
+  srcHtmls: ['components/**/*.html'],
   tests: 'components/**/*_test.js',
   buildFolder: 'dist',
   buildJsFilename: 'chat.js',
