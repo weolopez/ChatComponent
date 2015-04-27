@@ -1,6 +1,6 @@
 # angular-component-seed — the seed for reusable AngularJS components
 
-[![Build Status](https://travis-ci.org/refactorthis/angular-component-seed.svg?branch=master)](https://travis-ci.org/refactorthis/angular-component-seed)
+[![Build Status](https://travis-ci.org/weolopez/ChatComponent.svg?branch=master)](https://travis-ci.org/weolopez/ChatComponent.svg?branch=master)
 
 This seed project aims to make it easy to create bower components for reusable AngularJS directives, controllers
 & services which follow best practices.
