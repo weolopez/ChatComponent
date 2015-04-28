@@ -6,7 +6,7 @@
 
 angular
   .module('myComponent.version', [])
-  .value('version', '1.2.10');
+  .value('version', '1.2.12');
 
 'use strict';
 
@@ -100,6 +100,30 @@ angular.module('directive.chat', ['firebase', 'ngStorage'])
                     users: '=users'
                 },
                 templateUrl: 'bower_components/chat-component/dist/chat/people-list.html'
+            };
+        });
+'use strict';
+
+angular.module('directive.layout', [])
+        .config(function ($sceDelegateProvider) {
+            $sceDelegateProvider.resourceUrlWhitelist(['self', 'https://www.youtube.com/**']);
+        })
+        .directive('responsivevideo', function ($sce) {
+            return {
+                restrict: 'E',
+                transclude: true,
+                priority: -100,
+                scope: {
+                    embedcode: '@'
+                },
+                templateUrl: 'bower_components/chat-component/dist/layout/responsive-video.html',
+                link: function (scope) {
+                    scope.$watch('embedcode', function (newVal) {
+                        if (newVal) {
+                            scope.url = $sce.trustAsResourceUrl('http://www.youtube.com/embed/' + newVal);
+                        }
+                    });
+                }
             };
         });
 })();

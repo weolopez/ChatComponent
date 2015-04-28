@@ -16,7 +16,7 @@ angular.module('directive.layout', [])
                 link: function (scope) {
                     scope.$watch('embedcode', function (newVal) {
                         if (newVal) {
-                            scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/" + newVal);
+                            scope.url = $sce.trustAsResourceUrl('http://www.youtube.com/embed/' + newVal);
                         }
                     });
                 }
