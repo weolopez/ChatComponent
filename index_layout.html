@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="app">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            right: 20px;
+        }
+    </style>
+    <body ng-controller="MainCtrl as app" style="background-color: darkblue;margin: 0;padding: 0;;">
+    <responsivevideo embedcode="RwqIdr7miz8">        
+        <chatlist messages="app.messages"></chatlist>
+    </responsivevideo>
+
+
+    <script src="bower_components/angular/angular.js" type="text/javascript"></script>
+    <script src="bower_components/firebase/firebase.js" type="text/javascript"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js" type="text/javascript"></script>
+    <script src="bower_components/ngstorage/ngStorage.js" type="text/javascript"></script>
+    <script src="components/chat/chat.js" type="text/javascript"></script>
+    <script src="components/layout/responsive-video.js" type="text/javascript"></script>
+    <script>
+                angular.module('app', ['directive.chat', 'directive.layout'])
+                .controller('MainCtrl', function() {
+                this.messages = [{"message":"Chat works now", "usericon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1vbf1H0TZGUDaQrAs", "$priority":null}, {"message":"synchs with 2 domains 2 windows", "usericon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1x7GCbyEgIWfnzGji", "$priority":null}, {"message":"Hello Weo", "usericon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1xiFKWT7THxcpyYHJ", "$priority":null}, {"message":"hello venkat", "usericon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1xkRGjbIc5hCtg92w", "$priority":null}, {"message":"I am able to login using my Twitter account", "usericon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1xo2wNQLPyWYdoXLJ", "$priority":null}, {"message":"It worked", "usericon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1xtOUkH8Hy9ulJ79x", "$priority":null}, {"message":"you will dynamically see new users joinng too", "usericon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1xtskgCurd5cuk7_z", "$priority":null}, {"message":"Great", "usericon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1xvlsKVc1tl01F61w", "$priority":null}, {"message":"need to clear out the text area after send", "usericon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1y0McJhMOSHaguTy5", "$priority":null}, {"message":"need to implement send with \"Enter\" key", "usericon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1y3TsWbGtpFBbfwCK", "$priority":null}, {"message":"Exactly", "usericon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1y4e7GPnBn7OcloXE", "$priority":null}, {"message":"Yup", "usericon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1y7MJ_v2MrA96Sl_2", "$priority":null}, {"message":"need to add timestamps and announce in the chat room when someone enters and leaves", "usericon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1yOWs825Qv3AxHVWS", "$priority":null}, {"message":"oh funny the more I type the smaller my icon gets", "usericon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1yTrMVBmAwAcU9RKt", "$priority":null}, {"message":"only on the left side", "usericon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1yX5MB6KDZjuSANRJ", "$priority":null}, {"message":"yes, I just noticed it", "usericon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1yb1dDm-zzLfLnJ11", "$priority":null}, {"message":"Do you want me to explore adding timestamp", "usericon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1ymF_ubvIKssME1KN", "$priority":null}, {"message":"I need to push the code", "usericon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1z7OVV5uUA9GZ6HQ2", "$priority":null}];
+                        this.users = [{"name":"mauricio", "icon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1vbf1H0TZGUDaQrAs", "$priority":null}, {"name":"weolopez", "icon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1x7GCbyEgIWfnzGji", "$priority":null}, {"name":"venkat", "icon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1xiFKWT7THxcpyYHJ", "$priority":null}, {"name":"kelley", "icon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1xkRGjbIc5hCtg92w", "$priority":null}, {"name":"steve", "icon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1xo2wNQLPyWYdoXLJ", "$priority":null}, {"name":"zannia", "icon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1xtOUkH8Hy9ulJ79x", "$priority":null}, {"name":"mantione", "icon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1xtskgCurd5cuk7_z", "$priority":null}, {"name":"maddi", "icon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1xvlsKVc1tl01F61w", "$priority":null}, {"name":"brakkie", "icon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1y0McJhMOSHaguTy5", "$priority":null}, {"name":"venkatmaddi", "icon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1y3TsWbGtpFBbfwCK", "$priority":null}, {"name":"lopez", "icon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1y4e7GPnBn7OcloXE", "$priority":null}, {"name":"stevebrakkie", "icon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1y7MJ_v2MrA96Sl_2", "$priority":null}, {"name":"kelleymantione", "icon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1yOWs825Qv3AxHVWS", "$priority":null}, {"name":"zaniahrenner", "icon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1yTrMVBmAwAcU9RKt", "$priority":null}, {"name":"renner", "icon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1yX5MB6KDZjuSANRJ", "$priority":null}, {"name":"johnsmith", "icon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1yb1dDm-zzLfLnJ11", "$priority":null}, {"name":"joeshmo", "icon":"http://pbs.twimg.com/profile_images/588531016530165760/GCZLof66_normal.png", "$id":"-Jn1ymF_ubvIKssME1KN", "$priority":null}, {"name":"stevengerald", "icon":"http://pbs.twimg.com/profile_images/2624809146/deth5uh1mshijss9lsmy_normal.png", "$id":"-Jn1z7OVV5uUA9GZ6HQ2", "$priority":null}];
+                });</script>
+
+</body>
+</html>

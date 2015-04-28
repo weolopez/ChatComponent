@@ -1,7 +1,7 @@
 {
   "name": "chat-component",
   "private": false,
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "A AngularJS bower component for Chat Component. Gulp, karma, jshint & travis out of the box.",
   "repository": "https://github.com/weolopez/ChatComponent",
   "license": "MIT",
